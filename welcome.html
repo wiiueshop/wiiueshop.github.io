@@ -516,3 +516,34 @@ audio.play();
   }
   </script>
 
+<style>
+  /* THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 1 */
+  img {
+    user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  }
+  </style>
+  
+  
+    <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
+    
+    <script type="text/javascript">
+    (function(){
+    var ImageId = document.getElementById("image");
+        if (ImageId.addEventListener) {
+            ImageId.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            }, false);
+        } else {
+            ImageId.attachEvent('oncontextmenu', function() {
+                window.event.returnValue = false;
+            });
+        }
+    })()
+    </script>
+  
+    <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
