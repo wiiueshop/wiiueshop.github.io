@@ -54,6 +54,8 @@ body {
       font-family:"nintendo_NTLG-DB_002",sans-serif;
       background: rgb(232,231,232);
 background: linear-gradient(180deg, rgba(232,231,232,1) 8%, rgb(207, 206, 207) 62%);
+width:20px;
+height:20px;
     }
     button:hover {
       color:black;
