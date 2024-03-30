@@ -156,9 +156,11 @@ audio.play();
 </a>
 </a>
 </a>
-<!-- Set the visibility: visible; to visibility: hidden; if there is no NEW news-->
-<div class="newsnew"  style="visibility: visible;">
-  <img   onclick="load()" src="/image/seperated imgs menu/NEW_news_icon_orange.png"  loading="lazy">
+    <!-- UNUSED -->
+<div class="newsnew"  style="visibility:hidden;">
+  <!-- UNUSED -->
+  <img   src="/image/seperated imgs menu/news_icon_NEW_bkup.png"  loading="lazy">
+    <!-- UNUSED -->
 </a>
 </div>
 </a>
@@ -166,11 +168,18 @@ audio.play();
 </a>
 </a>
 </a>
+    <!-- UNUSED END -->
+
+        <!-- Change the /image/seperated imgs menu/news_icon.png to
+           /image/seperated imgs menu/news_icon_NEW_bkup.png IF THERE IS NEW NEWS -->
 <div  class="newsicon">
   <a href="News.html"  onmouseover="hover()" onclick="clicksound()">
   <img  onclick="load()"  src="/image/seperated imgs menu/news_icon.png"  loading="lazy">
 </a>
 </div>
+        <!-- Change the /image/seperated imgs menu/news_icon.png to
+           /image/seperated imgs menu/news_icon_NEW_bkup.png IF THERE IS NEW NEWS -->
+
 </a>
 <a><a><a><a><a></a>
 </a>
@@ -324,7 +333,7 @@ audio.play();
 
   .txt-srchbtm {
     left:28;
-    top:-285;
+    top:-290;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
@@ -336,8 +345,8 @@ audio.play();
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
   .exitbtn {
-    left:1.3;
-    top:-295;
+    left:1.1;
+    top:-299;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
@@ -358,31 +367,25 @@ audio.play();
   }
   .dnlcodesicon {
     left:140;
-   top:-100;
+   top:-103;
    position:relative;
    cursor: url("cursor.png"),url("cursor.png") pointer;
   }
   .chartsicon {
   left:350;
-   top: -127px;;
+   top: -132px;;
    position:relative;
    cursor: url("cursor.png"),url("cursor.png") pointer;
   }
   .newsicon {
     left:530;
-   top: -181px;
-   position:relative;
-   cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-  .newsnew {
-    left:520;
-   top: -167px;
+   top: -190px;
    position:relative;
    cursor: url("cursor.png"),url("cursor.png") pointer;
   }
 
   .searchbtn {
-    top:-215; left: 701px;;
+    top:-223; left: 701px;;
    position:relative;
    cursor: url("cursor.png"),url("cursor.png") pointer;
    background-color:white;
@@ -402,7 +405,7 @@ audio.play();
   }
   .txt-1 {
     left:188;
-    top:-248;
+    top:-253;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     font-weight:bold;
@@ -410,7 +413,7 @@ audio.play();
   }
   .txt-2 {
     left:409;
-    top:-299;
+    top:-302;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     font-weight:bold;
@@ -418,7 +421,7 @@ audio.play();
   }
   .txt-3 {
     left:593;
-    top:-339;
+    top:-343;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     max-width:5px;
@@ -466,7 +469,7 @@ max-width:.1px;
     position:relative;
   }
   .minusbtn {
-    top:279;
+    top:270;
     left:75;
     position:relative;
   }
@@ -486,7 +489,7 @@ max-width:.1px;
     width:26px;
   }
   .searchiconsidebar {
-    top:-159;
+    top:-178;
     left:41;
     position:relative;
   }
