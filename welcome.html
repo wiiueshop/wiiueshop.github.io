@@ -1,6 +1,6 @@
 
 <!-- Change the audio depending on month here: Janurary (bgm_jan.mp3), Summer months (bgm_summer.mp3) , Christmas theme (bgm_christmas.mp3)-->
-<iframe src="bgm/bgm_may.mp3" type="audio/mp3" allow="autoplay" allow="loop"  id="audio" style="display:none"></iframe>
+<iframe src="bgm/bgm_jan.mp3" type="audio/mp3" allow="autoplay" allow="loop"  id="audio" style="display:none"></iframe>
 <!-- Change the audio depending on month here: Janurary (bgm_jan.mp3), Summer months (bgm_summer.mp3) , Christmas theme (bgm_christmas.mp3)-->
 
 
@@ -96,7 +96,7 @@ audio.play();
 </head>
 <body>
 
-    <div class="ybtn" onmouseover="hover()" onclick="clicksound()">
+    <div class="ybtn" onmouseover="hover()" onclick="clicksound()" style="visibility:hidden;">
       <a   >
       <img  onclick="load()" src="/image/seperated imgs menu/btn_Y.png" loading="lazy">
     </a>
@@ -106,7 +106,7 @@ audio.play();
 </a>
 </a>
 </a>
-    <div class="plusbtn" onmouseover="hover()" onclick="clicksound()" >
+    <div class="plusbtn" onmouseover="hover()" onclick="clicksound()"  style="visibility:hidden;">
       <a   >
       <img  onclick="load()" src="/image/seperated imgs menu/btn_plus.png"  loading="lazy">
     </a>
@@ -116,7 +116,7 @@ audio.play();
 </a>
 </a>
 </a>
-    <div class="minusbtn" onmouseover="hover()" onclick="clicksound()" >
+    <div class="minusbtn" onmouseover="hover()" onclick="clicksound()"  style="visibility:hidden;">
       <a   >
       <img  onclick="load()" src="/image/seperated imgs menu/btn_minus.png"  loading="lazy">
     </a>
@@ -128,7 +128,7 @@ audio.play();
 </a>
     <div class="pts">
       <a   onmouseover="hover()" onclick="clicksound()">
-      <img    src="/image/seperated imgs menu/points_black.png"  loading="lazy">
+      <img    src="crediticon_plus.PNG"  loading="lazy">
     </a>
     </div>
   </a>
@@ -138,7 +138,7 @@ audio.play();
 </a>
 
 <div  class="dnlcodesicon">
-  <a href="DownloadCodes.html"  onmouseover="hover()" onclick="clicksound()">
+  <a href="#"  onmouseover="hover()" onclick="clicksound()">
   <img  onclick="load()" src="/image/seperated imgs menu/dnl_codes_icon.png"  loading="lazy">
 </a>
 </div>
@@ -189,7 +189,7 @@ audio.play();
 </a>
 
 <div  class="searchbtn" >
-  <img class="srch" onmouseover="hover()" src="/image/seperated imgs menu/search_orange.png"  loading="lazy">
+  <img class="srch" onmouseover="hover()" src="search_icon.PNG"  loading="lazy">
 </a>
 </a></a>
 </a>
@@ -236,7 +236,7 @@ audio.play();
 </a>
 <div  class="profileicon">
   <a   onmouseover="hover()" onclick="clicksound()">
-  <img    src="user_icon.png"  loading="lazy">
+  <img    src="mymenuiconuisr.PNG"  loading="lazy">
 </a>
 </div>
 </a>
@@ -260,7 +260,7 @@ audio.play();
 </a>
 <div  class="searchiconsidebar">
   <a   onmouseover="hover()" onclick="clicksound()">
-  <img   src="/image/seperated imgs menu/search_black.png"  loading="lazy">
+  <img  class="iconsearch"  src="search_iconwminus.PNG"  loading="lazy">
 </a>
 </div>
 </a>
@@ -273,7 +273,7 @@ audio.play();
 </a>
 
 <div class="txt-profile" onclick="clicksound()">
-    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" >&nbsp;&nbsp;My Menu</h4> </a> 
+    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="mymenutxt" >&nbsp;&nbsp;My Menu</h4> </a> 
   </a>
 </a>
 </a>
@@ -285,7 +285,7 @@ audio.play();
 </a>
 
 <div class="txt-credit" onclick="clicksound()">
-    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" >Balance: <br> &nbsp;&nbsp;$0.00</h4> </a> 
+    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" >Balance: <br> &nbsp;&nbsp;&nbsp;&nbsp;null</h4> </a> 
   </a>
 </a>
 </a>
@@ -297,7 +297,7 @@ audio.play();
 </a>
 
 <div class="txt-srchbtm" onclick="clicksound()">
-    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" >Search</h4> </a> 
+    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txtSEARCH" >Search</h4> </a> 
   </a>
 </a>
 </a>
@@ -305,36 +305,40 @@ audio.play();
 </a>
 </div>
 </a>
-<a href="fadeaway.html"  onmouseover="hover()" onclick="backsound()">
+<a href="fadeaway.html"  onmouseover="hover()" onclick="back()">
 
 <div class="exitbtn">
-  <img class="exit" src="close_btn22.PNG"  loading="lazy">
+  <img class="exit" src="X_icon2.PNG"  loading="lazy">
 </a>
 </div>
 </a>
 
+
+
+
 </body>
 </html>
 
-
+</div>
 <style>
     .txt-profile {
-    left:35;
-    top:-385;
+    left:12;
+    top:-375;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
+    text-wrap:nowrap;
   }
 
   .txt-credit {
-    left:25;
-    top:-340;
+    left:24;
+    top:-343;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
 
   .txt-srchbtm {
-    left:28;
-    top:-290;
+    left:32;
+    top:-285;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
@@ -344,15 +348,22 @@ audio.play();
     background-repeat:no-repeat;
     background-size:885px;
     cursor: url("cursor.png"),url("cursor.png") pointer;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .txtSEARCH {
+    position:absolute;
+    top:-23px;
+    left:-3px;
   }
   .exitbtn {
-    left:1.1;
-    top:-299;
+    left:37;
+    top:-239;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
   .exit {
-    max-width:118px;
+    max-width:39px;
   }
   .dnlcodesicon img {
     max-width:27px;
@@ -389,20 +400,19 @@ audio.play();
     top:-223; left: 701px;;
    position:relative;
    cursor: url("cursor.png"),url("cursor.png") pointer;
-   background-color:white;
    width:160px;
-   border-radius:5px;
-   border:1px solid grey;
    padding-bottom:1px;
    padding-top:1px;
   }
 
   .searchbtn img {
-    max-width:29px;
+    max-width:65px;
   }
   .srch {
-    margin-left:3px;
-    max-width:9px;
+    margin-left:9px;
+    margin-top:1px;
+    max-width:65px;
+
   }
   .txt-1 {
     left:188;
@@ -447,16 +457,16 @@ max-width:.1px;
     cursor: url("cursor.png"),url("cursor.png") pointer;
   }
   .profileicon {
-    top:-340;
-    left:29;
+    top:-329;
+    left:33;
     position:relative;
   }
   .profileicon img {
-    max-width:45px;
+max-width:65px;
   }
   .pts {
-    top:125;
-    left:35;
+    top:137;
+    left:37;
     position:relative;
   }
   .ybtn {
@@ -475,7 +485,7 @@ max-width:.1px;
     position:relative;
   }
   .pts img {
-    width:40px;
+    max-width:65px;
   }
   .ybtn img {
     width:26px;
@@ -490,35 +500,27 @@ max-width:.1px;
     width:26px;
   }
   .searchiconsidebar {
-    top:-178;
-    left:41;
+    top:-159;
+    left:37;
     position:relative;
+  }
+  .searchiconsidebar img {
+    max-width:69px;
+  }
+  .iconsearch {
+    position:relative;
+    top:-15px;
+    left:-3px;
+  }
+  .mymenutxt {
+top:-20px;
+left:1px;
+position:relative;
   }
 </style>
 
 
-<script>
-  function hover() {
-    var audio = new Audio('sfx/Wii U - Hover.mp3');
-audio.play();
-  }
-  </script>
 
-
-
-<script>
-  function backsound() {
-    var audio = new Audio('sfx/Wii U - Back.wav');
-audio.play();
-  }
-  </script>
-
-<script>
-  function clicksound() {
-    var audio = new Audio('sfx/Wii U - Long Click.mp3');
-audio.play();
-  }
-  </script>
 
 <style>
   /* THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 1 */
@@ -531,23 +533,59 @@ audio.play();
   -ms-user-select: none;
   }
   </style>
-  
-  
-    <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
-    
-    <script type="text/javascript">
-    (function(){
-    var ImageId = document.getElementById("image");
-        if (ImageId.addEventListener) {
-            ImageId.addEventListener('contextmenu', function(e) {
-                e.preventDefault();
-            }, false);
-        } else {
-            ImageId.attachEvent('oncontextmenu', function() {
-                window.event.returnValue = false;
-            });
-        }
-    })()
-    </script>
-  
-    <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
+
+  </a>
+    <a style="text-decoration:none;" href="fadeaway.html"  onmouseover="hover()" onclick="back()">
+    <div class="exitbtn">
+      <h4 class="exittxt">Close</h4>
+    </a>
+    </div>
+    </a>
+    <img class="logo" src="eshoplogo.png">
+
+    <Style>
+      .exittxt {
+        color:white;
+        top:-9px;
+        left:-5px;
+        text-decoration:none;
+        position:relative;
+      }
+    </Style>
+
+
+
+<Style>
+  .logo {
+position:absolute;
+top:230;
+max-width:390px;
+margin:0;
+left:320;
+  }
+
+</style>
+<link rel="icon" type="image/x-icon" href="eshop_bag.png">
+
+
+<script>
+  function hover() {
+    var audio = new Audio('sfx/Wii U - Hover.mp3');
+audio.play();
+  }
+  </script>
+
+
+<script>
+  function back() {
+    var audio = new Audio('sfx/Wii U - Back.wav');
+audio.play();
+  }
+  </script>
+
+<script>
+  function clicksound() {
+    var audio = new Audio('sfx/Wii U - Long Click.mp3');
+audio.play();
+  }
+  </script>

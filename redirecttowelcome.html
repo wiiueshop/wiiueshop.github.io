@@ -1,0 +1,86 @@
+
+
+<center>
+<body onload="load()">
+
+
+    <img id="imgforshow" src="/load-ui-sfx/loadertry2.gif" class="loaderthatshows">
+
+        <script>
+            function load() {
+                $('#imgforshow').fadeTo(200, 0.9); // Fade to 50% opacity over 1 second
+                var audio = new Audio('sfx/Wii U - Loading.mp3');
+  audio.play();
+            }
+  
+        </script>
+        <!-- Loading image css start -->
+        
+        <style>
+  .ldrrIMAFE {
+    max-width:220px; max-height:90px;
+    left:385px;
+    top:205px;
+    position:absolute;
+  }
+  
+  
+            /* Loader img properties */
+        .loaderthatshows {
+           float:center;
+           margin:0;
+           top:0;
+           position:sticky;
+           border-radius:20px;
+           opacity:0%;
+           bottom:9;
+           /* Change depending on image */
+           max-width:60px;
+        
+           /* Change depending on image */
+        }
+        /* Loader img properties */
+        
+        
+        /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
+        .containermg {
+            position: center;
+            float:center;
+            display:center;
+ margin:0;
+            opacity:100%;
+        }
+    
+        /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
+        
+        </style>
+        <!-- Loading image css end -->
+        
+        
+            <!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
+        
+            <!-- Loading image stuff end (do the load() function on something so it shows while loading another page.)-->
+        
+            <BR><BR><BR>
+            
+<h4>Please wait a moment..</h4>
+<Style>
+* {
+    font-family:"nintendo_NTLG-DB_002",sans-serif;
+    position:center;
+font-size:19px;
+}
+
+
+h4 {
+    text-wrap:nowrap;
+    margin-top:-10px;
+}
+</Style>
+
+<title>eShop - Please wait..</title>
+<meta http-equiv = "refresh" content = ".3; url = welcome.html" />
+<link rel="icon" type="image/x-icon" href="eshop_bag.png">
+</body>
+
+</center>

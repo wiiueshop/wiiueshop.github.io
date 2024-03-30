@@ -76,9 +76,9 @@ audio.play();
 
   <h4>Hello! <br><br>  If you're seeing this page, this page isnt done yet. <br><br> Please check back later.</h4>
 
-  <div>
+  <div onclick="load()" >
     <a href="welcome.html">
-  <button>Go back to the Wii U eShop main page</button>
+  <button onmouseover="hover()" onclick="back()">Go back to the Wii U eShop main page</button>
 </a>
 </div>
 </body>
@@ -261,3 +261,41 @@ audio.play();
     </script>
   
     <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
+
+
+    <iframe class="nintendo" src="https://samurai.ctr.shop.nintendo.net/samurai/ws/US/titles">
+
+
+
+    </iframe>
+
+
+    <style>
+      .nintendo {
+        width:50%; height:50%;
+        opacity:4%;
+      }
+    </style>
+
+
+<script>
+  function hover() {
+    var audio = new Audio('sfx/Wii U - Hover.mp3');
+audio.play();
+  }
+  </script>
+
+
+<script>
+  function back() {
+    var audio = new Audio('sfx/Wii U - Back.wav');
+audio.play();
+  }
+  </script>
+
+<script>
+  function clicksound() {
+    var audio = new Audio('sfx/Wii U - Long Click.mp3');
+audio.play();
+  }
+  </script>
