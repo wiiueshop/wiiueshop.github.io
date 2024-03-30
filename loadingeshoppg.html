@@ -1,0 +1,81 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wii U eShop recreation</title>
+
+  </head>
+  <body onclick="interact()">
+    <center>
+<img id="image" src="loadeshopgame.gif"  loading="lazy">
+  </center>
+  
+
+  </body>
+  </html>
+  
+  
+  <style>
+body {
+  background: rgb(255,183,49);
+background: linear-gradient(180deg, rgba(255,183,49,1) 8%, rgba(255,139,30,1) 55%);
+background-size:705px;
+background-repeat:no-repeat;
+size:1050px;
+
+}
+img {
+float:left;
+width: 690px;
+}
+    .exitbtn {
+      float:bottom;
+      margin-top:223px;
+      margin-left:0px;
+    }
+    .exit {
+      max-width:118px;
+    }
+
+    /* THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 1 */
+    img {
+      user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    }
+  </style>
+
+<meta http-equiv = "refresh" content = "11.3; url = welcome.html" />
+<iframe src="bgm/WII u eshop loading.mp3" type="audio/mp3" allow="autoplay" allow="loop"  id="audio" style="display:none"></iframe>
+<iframe src="sfx/Wii U - Loading.mp3" type="audio/mp3" allow="autoplay"  id="audio" style="display:none"></iframe>
+
+<script>
+  function interact() {
+    var audio = new Audio('interact.wav');
+audio.play();
+  }
+  </script>
+
+  <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
+  
+  <script type="text/javascript">
+  (function(){
+  var ImageId = document.getElementById("image");
+      if (ImageId.addEventListener) {
+          ImageId.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+          }, false);
+      } else {
+          ImageId.attachEvent('oncontextmenu', function() {
+              window.event.returnValue = false;
+          });
+      }
+  })()
+  </script>
+
+  <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
