@@ -40,7 +40,7 @@ width: 690px;
     }
 </style>
 <!-- 11.3-->
-<meta http-equiv = "refresh" content = "11; url = fadein.html" />
+<meta http-equiv = "refresh" content = "11; url = mainpgholder(bgm-etc).html" />
 <iframe src="bgm/WII u eshop loading.mp3" type="audio/mp3" allow="autoplay" allow="loop"  id="audio" style="display:none"></iframe>
 <iframe src="sfx/Wii U - Loading.mp3" type="audio/mp3" allow="autoplay"  id="audio" style="display:none"></iframe>
 
@@ -82,3 +82,10 @@ user-select: none;
   </script>
 
   <!--  THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 2 -->
+
+
+  <!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+<script>
+  document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+</script>
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->

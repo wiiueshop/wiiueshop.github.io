@@ -1,5 +1,3 @@
-<iframe src="bgm/bgm_news.mp3" type="audio/mp3" allow="autoplay" allow="loop"  id="audio" style="display:none"></iframe>
-
 
 <!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
     <!-- Loading image stuff start (do the load() function on something so it shows while loading another page.)-->
@@ -120,3 +118,10 @@ audio.play();
 </div>
 </a>
 
+
+
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+<script>
+    document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+</script>
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
