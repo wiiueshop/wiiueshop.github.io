@@ -18,6 +18,7 @@
 
   loader.addEventListener("transitionend", () => {
     document.body.removeChild(loader);
+    startcursor()
   });
 });
 
@@ -641,9 +642,9 @@ max-width:90px;
     <script>
       // Follow Your mouse pointer JS (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code. 
 // this is just modified to work with images.)
-
+function startcursor() {
 $(document).on("mousemove", function(e) {
     $(".custom-cursor").attr('style', '--y:' + e.clientY + 'px; --x:' + e.clientX +'px' )
 });
-
+}
     </script>
