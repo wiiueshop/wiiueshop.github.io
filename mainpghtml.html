@@ -1,3 +1,7 @@
+<head>
+  <link rel="icon" type="image/x-icon" href="eshop_bag.png">
+  <title>Wii U eShop recreation</title>
+</head>
 <!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
 <script>
   document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
@@ -93,10 +97,10 @@ audio.play();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wii U eShop recreation</title>
-  <link rel="stylesheet" href="eshop.css">
+  <link rel="stylesheet" href="eshop_mainpg_.css">
   <link rel="icon" type="image/x-icon" href="eshop_bag.png">
 </head>
-<body>
+<body  loading="lazy">
 
     <div class="ybtn" onmouseover="hover()" onclick="clicksound()" style="visibility:hidden;">
       <a   >
@@ -191,8 +195,8 @@ audio.play();
 </a>
 
 <div  class="searchbtn" >
-  <div onclick="load()">
-  <img id="image"  onmouseover="hover()" onclick="clicksound()"  class="srch" onmouseover="hover()" src="search_icon.PNG"  loading="lazy">
+  <div >
+  <img id="image"  onmouseover="hover()"  class="srch" onmouseover="hover()" src="search_icon.PNG"  loading="lazy">
   </div>
 </a>
 </a></a>
@@ -204,7 +208,7 @@ audio.play();
 
 
 <div class="txt-1" onclick="clicksound()">
-    <a onclick="load()"  href="#" style="text-decoration:none; color:black;" onmouseover="hover()"  >Enter Download <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Code</h4> </a>  
+    <a onclick="load()"  href="#" style="text-decoration:none; color:rgb(44, 44, 44);" onmouseover="hover()"  >Enter Download <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Code</h4> </a>  
   </a>
 </a>
 </a>
@@ -214,7 +218,7 @@ audio.play();
 </a>
 
 <div class="txt-2" onclick="clicksound()" >
-    <a onclick="load()" href="#"   style="text-decoration:none; color:black;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt2a" onclick="load()">Charts</h4>  </a>
+    <a onclick="load()" href="#"   style="text-decoration:none; color:rgb(44, 44, 44);" onmouseover="hover()" style="text-decoration:none; color:rgb(44, 44, 44);"> <h4 class="txt2a" onclick="load()">Charts</h4>  </a>
   </a>
 </a>
 </a>
@@ -225,7 +229,7 @@ audio.play();
 </a>
 
 <div class="txt-3" onclick="clicksound()">
-    <a onclick="load()" href="news.html"  style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" onclick="load()">News</h4> </a> 
+    <a onclick="load()" href="news.html"  style="text-decoration:none; color:rgb(44, 44, 44); max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:rgb(44, 44, 44);"> <h4 class="txt3a" onclick="load()">News</h4> </a> 
   </a>
 </a>
 </a>
@@ -234,8 +238,10 @@ audio.play();
 </div>
 </a>
 
+
+
 <div class="txt-head" >
-  <h4   onmouseover="hover()"  style="color:rgb(255, 158, 48);">eShop Home</h4>
+  <h4   onmouseover="hover()"  style="color:rgb(255, 140, 8);">eShop Home</h4>
 </div>
 
 </a>
@@ -279,7 +285,7 @@ audio.play();
 
 <div class="txt-profile" >
   <div onclick="load()" >
-    <a  onmouseover="hover()" onclick="clicksound()"  style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="mymenutxt" >&nbsp;&nbsp;My Menu</h4> </a>
+    <a  onmouseover="hover()" onclick="clicksound()"  style="text-decoration:none; color:rgb(44, 44, 44); max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:rgb(44, 44, 44);"> <h4 class="mymenutxt" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu</h4> </a>
   </div> 
   </a>
 </a>
@@ -293,7 +299,7 @@ audio.play();
 
 <div class="txt-credit" >
   <div onclick="load()" >
-    <a  onmouseover="hover()" onclick="clicksound()"  style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" >Balance: <br> &nbsp;&nbsp;&nbsp;&nbsp;null</h4> </a> 
+    <a  onmouseover="hover()" onclick="clicksound()"  style="text-decoration:none; color:rgb(44, 44, 44); max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:rgb(44, 44, 44);"> <h4 class="txt3a" >Balance: <br> &nbsp;&nbsp;&nbsp;&nbsp;null</h4> </a> 
   </a></div>
 </a>
 </a>
@@ -306,7 +312,7 @@ audio.play();
 
 <div class="txt-srchbtm"  >
   <div onclick="load()" >
-    <a onmouseover="hover()" onclick="clicksound()" style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txtSEARCH" >Search</h4> </a> 
+    <a onmouseover="hover()" onclick="clicksound()" style="text-decoration:none; color:rgb(44, 44, 44); max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:rgb(44, 44, 44);"> <h4 class="txtSEARCH" >Search</h4> </a> 
   </a></div>
 </a>
 </a>
@@ -317,10 +323,1333 @@ audio.play();
 <a href="fadeaway.html" >
 
 <div class="exitbtn">
-  <img id="image"  onmouseover="hover()" onclick="clicksound()"  class="exit" src="X_icon2.PNG"  loading="lazy">
+  <img id="image"  onmouseover="hover()"  class="exit" src="X_icon2.PNG"  loading="lazy">
 </a>
 </div>
 </a>
+
+
+
+<!-- ESHOP MAIN PG STUFF START-->
+<div class="eshopiconsholdr">
+
+  <div>
+    <a href="#?ZELDAU">
+    <img id="image" class="icon-zeldaU" src="icons/gameicons/ZELDAU_GIANT_icon.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+   
+  </div>
+  </a>
+  
+  <a href="#?ZELDAU" onmouseover="hover()" onclick="clicksound()">
+  <h2 class="txtzeldaU">The Legend of Zelda&trade;: Breath of the Wild</h2>
+  </a>
+  
+  <div>
+    <a href="#?Splatoon1">
+    <img id="image" class="icon-splatoon" src="icons/gameicons/Splatoon_giant_icon.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+   
+  </div>
+  </a>
+  <a href="#?Splatoon1" onmouseover="hover()" onclick="clicksound()">
+    <h2 class="txtsplatoon">Splatoon&trade;</h2>
+    </a>
+  
+  
+  <div class="centergameicons">
+    <div>
+      <a href="#?NINTENDOSELECTS">
+      <img id="image" class="icon-NS" src="icons/gameicons/NINTENDOSELECTS_THIN_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+     
+    </div>
+  </a>
+  
+  <a href="#?NINTENDOSELECTS" onmouseover="hover()" onclick="clicksound()">
+    <h2 class="txtNS">Nintendo Selects</h2>
+    </a>
+  
+    <div>
+      <a href="#?MK8">
+      <img id="image" class="icon-MK8" src="icons/gameicons/MK8_THIN_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+     
+    </div>
+  </a>
+  
+  <a href="#?MK8" onmouseover="hover()" onclick="clicksound()">
+    <h2 class="txtMK8">Mario Kart&trade; 8</h2>
+    </a>
+  
+    <div>
+      <a href="#?NR">
+      <img id="image" class="icon-NR" src="icons/gameicons/NEW_RELEASES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+     
+    </div>
+  </a>
+  
+  <a href="#?NR" onmouseover="hover()" onclick="clicksound()">
+    <h2 class="txtNR">New Releases</h2>
+    </a>
+  
+    <!-- NEXT SECTION -->
+      <!-- NEXT SECTION -->
+          <!-- NEXT SECTION -->
+
+    <img class="catagories-bar" src="icons/gameicons/Catagories_bnr.PNG" onmouseover="hover()">
+  
+    <!-- NEXT SECTION -->
+      <!-- NEXT SECTION -->
+          <!-- NEXT SECTION -->
+
+            <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+
+
+                  <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+      <div>
+        <a href="#?MARIO">
+        <img id="image" class="icon-MARIO" src="icons/gameicons/MARIOGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+       
+      </div>
+    </a>
+    
+
+
+    
+    <a href="#?MARIO" onmouseover="hover()" onclick="clicksound()">
+      <h2 class="txtMARIO">Mario&trade;  Games</h2>
+      </a>
+
+      <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+
+
+
+
+         <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+    
+    <a href="#?POKEMON" onmouseover="hover()" onclick="clicksound()">
+      <h2 class="txtPOKEMON">Pokémon&trade;  Games</h2>
+      </a>
+
+
+      <div>
+        <a href="#?POKEMON">
+        <img id="image" class="icon-POKEMON" src="icons/gameicons/POKEMONGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+       
+      </div>
+    </a>
+          <!-- _____________________________________________________________________  -->
+               <!-- _____________________________________________________________________  -->
+
+
+
+         <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+    
+            <a href="#?ZELDAGAMES" onmouseover="hover()" onclick="clicksound()">
+              <h2 class="txtZELDAUU">The Legend of Zel...</h2>
+              </a>
+        
+        
+              <div>
+                <a href="#?ZELDAGAMES">
+                <img id="image" class="icon-ZELDAUU" src="icons/gameicons/ZELDAGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+               
+              </div>
+            </a>
+                  <!-- _____________________________________________________________________  -->
+                       <!-- _____________________________________________________________________  -->
+        
+
+
+         <!-- _____________________________________________________________________  -->
+            <!-- _____________________________________________________________________  -->
+    
+            <a href="#?KIRBYGAMES" onmouseover="hover()" onclick="clicksound()">
+              <h2 class="txtKIRBYY">Kirby&trade; Games</h2>
+              </a>
+        
+        
+              <div>
+                <a href="#?KIRBYGAMES">
+                <img id="image" class="icon-KIRBYY" src="icons/gameicons/KIRBYGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+               
+              </div>
+            </a>
+                  <!-- _____________________________________________________________________  -->
+                       <!-- _____________________________________________________________________  -->
+      
+
+                       <a href="#?SONICGAMES" onmouseover="hover()" onclick="clicksound()">
+                        <h2 class="txtSONIC">Sonic Games</h2>
+                        </a>
+                  
+                  
+                        <div>
+                          <a href="#?SONICGAMES">
+                          <img id="image" class="icon-SONIC" src="icons/gameicons/SONICGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                         
+                        </div>
+                      </a>
+                            <!-- _____________________________________________________________________  -->
+                                 <!-- _____________________________________________________________________  -->
+                  
+
+                  <!-- _____________________________________________________________________  -->
+                       <!-- _____________________________________________________________________  -->
+      
+
+                       <a href="#?LEGOGAMES" onmouseover="hover()" onclick="clicksound()">
+                        <h2 class="txtLEGO">LEGO&reg; Games</h2>
+                        </a>
+                  
+                  
+                        <div>
+                          <a href="#?LEGOGAMES">
+                          <img id="image" class="icon-LEGO" src="icons/gameicons/LEGOGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                         
+                        </div>
+                      </a>
+                            <!-- _____________________________________________________________________  -->
+                                 <!-- _____________________________________________________________________  -->
+                  
+
+
+
+                  <!-- _____________________________________________________________________  -->
+                       <!-- _____________________________________________________________________  -->
+      
+
+                       <a href="#?INDIEGAMES" onmouseover="hover()" onclick="clicksound()">
+                        <h2 class="txtINDIE">Indie Games</h2>
+                        </a>
+                  
+                  
+                        <div>
+                          <a href="#?INDIEGAMES">
+                          <img id="image" class="icon-INDIE" src="icons/gameicons/INDIEGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                         
+                        </div>
+                      </a>
+                            <!-- _____________________________________________________________________  -->
+                                 <!-- _____________________________________________________________________  -->
+                  
+
+                                 <a href="#?VCGAMES" onmouseover="hover()" onclick="clicksound()">
+                                  <h2 class="txtVC">Virtual Console&trade;</h2>
+                                  </a>
+                            
+                            
+                                  <div>
+                                    <a href="#?VCGAMES">
+                                    <img id="image" class="icon-VC" src="icons/gameicons/Virtual Console_tm_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                   
+                                  </div>
+                                </a>
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                            
+
+
+
+                                           <a href="#?SONICGAMES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtSONIC">Sonic Games</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?SONICGAMES">
+                                              <img id="image" class="icon-SONIC" src="icons/gameicons/SONICGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?LEGOGAMES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtLEGO">LEGO&reg; Games</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?LEGOGAMES">
+                                              <img id="image" class="icon-LEGO" src="icons/gameicons/LEGOGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                    
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?INDIEGAMES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtINDIE">Indie Games</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?INDIEGAMES">
+                                              <img id="image" class="icon-INDIE" src="icons/gameicons/INDIEGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                                     <a href="#?VCGAMES" onmouseover="hover()" onclick="clicksound()">
+                                                      <h2 class="txtVC">Virtual Console&trade;</h2>
+                                                      </a>
+                                                
+                                                
+                                                      <div>
+                                                        <a href="#?VCGAMES">
+                                                        <img id="image" class="icon-VC" src="icons/gameicons/Virtual Console_tm_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                       
+                                                      </div>
+                                                    </a>
+                                                          <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+
+
+                                                               
+                                           <a href="#?BESTSELLERS" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtsellers">Best Sellers</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?BESTSELLERS">
+                                              <img id="image" class="icon-sellers" src="icons/gameicons/BESTSELLERS_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?GWD" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtdemos">Games with Demos</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?GWD">
+                                              <img id="image" class="icon-demos" src="icons/gameicons/GAMESWITHDEMOS_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                    
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?GWDLC" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtDLCS">Games with DLC</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?GWDLC">
+                                              <img id="image" class="icon-DLCS" src="icons/gameicons/GAMESWITHDIC_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                                     <a href="#?GOS" onmouseover="hover()" onclick="clicksound()">
+                                                      <h2 class="txtSALES">Games on Sale</h2>
+                                                      </a>
+                                                
+                                                
+                                                      <div>
+                                                        <a href="#?GOS">
+                                                        <img id="image" class="icon-SALES" src="icons/gameicons/GAMESONSALE_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                       
+                                                      </div>
+                                                    </a>
+                                                          <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+
+
+
+                                                               
+                                           <a href="#?EXCLUSIVES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtexclusives">eShop Exclusives</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?EXCLUSIVES">
+                                              <img id="image" class="icon-exclusives" src="icons/gameicons/ESHOPEXUSLIVES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?KIDSGAMES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtkids">Games for Kids</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?KIDSGAMES">
+                                              <img id="image" class="icon-kids" src="icons/gameicons/GAMESFORKIDS_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                    
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?MULTIPLRGAMES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtMP">Multiplayer Games</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?MULTIPLRGAMES">
+                                              <img id="image" class="icon-MP" src="icons/gameicons/MULTIPLAYERGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                                     <a href="#?RPGGAMES" onmouseover="hover()" onclick="clicksound()">
+                                                      <h2 class="txtRPGS">RPGs</h2>
+                                                      </a>
+                                                
+                                                
+                                                      <div>
+                                                        <a href="#?RPGGAMES">
+                                                        <img id="image" class="icon-RPGS" src="icons/gameicons/RPGS_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                       
+                                                      </div>
+                                                    </a>
+                                                          <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+
+
+                                                                                                                        <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+
+
+
+                                                               
+                                           <a href="#?FOABUDGET" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtbudget">Fun on a Budget</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?FOABUDGET">
+                                              <img id="image" class="icon-budget" src="icons/gameicons/FUNONABUDGET_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?PLATFORMERS" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtplatformer">Platformers</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?PLATFORMERS">
+                                              <img id="image" class="icon-platformer" src="icons/gameicons/PLATFORMERS_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                    
+                    
+                                      <!-- _____________________________________________________________________  -->
+                                           <!-- _____________________________________________________________________  -->
+                          
+                    
+                                           <a href="#?SPORTSGAMES" onmouseover="hover()" onclick="clicksound()">
+                                            <h2 class="txtsports">Sports Games</h2>
+                                            </a>
+                                      
+                                      
+                                            <div>
+                                              <a href="#?SPORTSGAMES">
+                                              <img id="image" class="icon-sports" src="icons/gameicons/SPORTSGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                             
+                                            </div>
+                                          </a>
+                                                <!-- _____________________________________________________________________  -->
+                                                     <!-- _____________________________________________________________________  -->
+                                      
+                    
+                                                     <a href="#?RECOMMENDED" onmouseover="hover()" onclick="clicksound()">
+                                                      <h2 class="txtrec">Recommended for...</h2>
+                                                      </a>
+                                                
+                                                
+                                                      <div>
+                                                        <a href="#?RECOMMENDED">
+                                                        <img id="image" class="icon-rec" src="icons/gameicons/RECOMMENDED FOR_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                       
+                                                      </div>
+                                                    </a>
+                                                          <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+
+
+
+
+
+                                                             <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+                                                              <!--                              VIRTUAL CONSOLE
+-->  
+
+                                                             <!-- _____________________________________________________________________  -->
+                                                               <!-- _____________________________________________________________________  -->
+                                                
+
+                                                               <a href="#?NES" onmouseover="hover()" onclick="clicksound()">
+                                                                <h2 class="txtNES">NES&trade;</h2>
+                                                                </a>
+                                                          
+                                                          
+                                                                <div>
+                                                                  <a href="#?NES">
+                                                                  <img id="image" class="icon-NES" src="icons/gameicons/NES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                                 
+                                                                </div>
+
+                                                                
+                                                               <a href="#?SNES" onmouseover="hover()" onclick="clicksound()">
+                                                                <h2 class="txtSNES">Super NES&trade;</h2>
+                                                                </a>
+                                                          
+                                                          
+                                                                <div>
+                                                                  <a href="#?SNES">
+                                                                  <img id="image" class="icon-SNES" src="icons/gameicons/SNES_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                                 
+                                                                </div>
+
+                                                                
+                                                               <a href="#?GBA" onmouseover="hover()" onclick="clicksound()">
+                                                                <h2 class="txtGBA">Game Boy&trade; Advance</h2>
+                                                                </a>
+                                                          
+                                                          
+                                                                <div>
+                                                                  <a href="#?GBA">
+                                                                  <img id="image" class="icon-GBA" src="icons/gameicons/GBA_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                                 
+                                                                </div>
+
+                                                                
+                                                               <a href="#?N64" onmouseover="hover()" onclick="clicksound()">
+                                                                <h2 class="txtN64">Nintendo 64&trade;</h2>
+                                                                </a>
+                                                          
+                                                          
+                                                                <div>
+                                                                  <a href="#?N64">
+                                                                  <img id="image" class="icon-N64" src="icons/gameicons/N64_icon.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                                 
+                                                                </div>
+
+                                                                
+                                                               <a href="#?NDS" onmouseover="hover()" onclick="clicksound()">
+                                                                <h2 class="txtNDS">Nintendo DS&trade;</h2>
+                                                                </a>
+                                                          
+                                                          
+                                                                <div>
+                                                                  <a href="#?NDS">
+                                                                  <img id="image" class="icon-NDS" src="icons/gameicons/DS_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                                 
+                                                                </div>
+
+                                                                
+                                                               <a href="#?WII" onmouseover="hover()" onclick="clicksound()">
+                                                                <h2 class="txtWII">Wii</h2>
+                                                                </a>
+                                                          
+                                                          
+                                                                <div>
+                                                                  <a href="#?WII">
+                                                                  <img id="image" class="icon-WII" src="icons/gameicons/WII_ICON.PNG" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+                                                                 
+                                                                </div>
+
+<style>
+.icon-NES {
+  position:absolute;
+  max-width:205px;
+  border-radius:7px;
+  margin:0;
+  top:1725;
+  left:191;
+  filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  max-height:200px;
+}
+.txtNES {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:1810;
+  left:275;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.icon-SNES {
+  position:absolute;
+  max-width:205px;
+  border-radius:7px;
+  margin:0;
+  top:1725;
+  left:430;
+  filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  max-height:200px;
+}
+.txtSNES {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:1810;
+  left:484;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.icon-GBA {
+  position:absolute;
+  max-width:205px;
+  border-radius:7px;
+  margin:0;
+  top:1725;
+  left:670;
+  filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  max-height:200px;
+}
+.txtGBA {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:1810;
+  left:692;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+
+
+.icon-N64 {
+  position:absolute;
+  max-width:205px;
+  border-radius:7px;
+  margin:0;
+  top:1850;
+  left:191;
+  filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  max-height:200px;
+}
+.txtN64 {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:1930;
+    left:242;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.icon-NDS {
+  position:absolute;
+  max-width:205px;
+  border-radius:7px;
+  margin:0;
+  top:1850;
+  left:430;
+  filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  max-height:200px;
+}
+.txtNDS {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:1930;
+  left:473;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.icon-WII {
+  position:absolute;
+  max-width:205px;
+  border-radius:7px;
+  margin:0;
+  top:1850;
+  left:670;
+  filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  max-height:200px;
+}
+.txtWII {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:1930;
+  left:763;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+</style>
+
+  <!-- ESHOP MAIN PG STUFF (html) end-->
+    </div>
+  </div>
+  </div></div>
+
+  <Style>
+
+    .eshopiconsholdr {
+      max-height:425px;
+      margin-top:-620px;
+    width:920px;
+margin-left:-50px;
+    height:1100px;
+    position: sticky;
+    overflow:scroll;
+    overflow-x:hidden;
+  }
+  .icon-zeldaU {
+    position:absolute;
+top:5;
+max-width:335px;
+max-height:200px;
+border-radius:7px;
+margin:0;
+left:190;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  }
+  .txtzeldaU {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:170;
+    left:195;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-splatoon {
+    position:absolute;
+    top:5;
+max-width:335px;
+max-height:200px;
+border-radius:7px;
+margin:0;
+left:537;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+  }
+  .txtsplatoon {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:170;
+    left:655;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-NS{
+  position:absolute;
+  top:230;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:190;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+}
+.txtNS {
+  position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:424;
+    left:205;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }  
+  .icon-MK8{
+  position:absolute;
+  top:230;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:362;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+}
+.txtMK8 {
+  position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:424;
+    left:379;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-NR{
+  position:absolute;
+  top:230;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:535;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+}
+.txtNR {
+  position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:424;
+    left:555;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .catagories-bar {
+    position:absolute;
+  top:465;
+max-width:800px;
+border-radius:7px;
+margin:0;
+left:185;
+filter: drop-shadow(5px 5px 5px rgb(151, 151, 151));
+max-height:200px;
+  }
+
+  .icon-MARIO{
+  position:absolute;
+  top:535;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:190;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+}
+.txtMARIO {
+  position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:729;
+    left:204;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-POKEMON {
+    position:absolute;
+  top:535;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:362;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtPOKEMON {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:729;
+    left:362;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-ZELDAUU {
+    position:absolute;
+  top:535;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:535;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtZELDAUU {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:729;
+    left:533;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-KIRBYY {
+    position:absolute;
+  top:535;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:718;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtKIRBYY {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:729;
+    left:733;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-SONIC {
+    position:absolute;
+  top:773;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:190;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtSONIC {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:965;
+    left:213;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-LEGO {
+    position:absolute;
+  top:773;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:362;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtLEGO {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:965;
+    left:376;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-INDIE {
+    position:absolute;
+  top:773;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:535;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtINDIE {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:965;
+    left:559;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+  .icon-VC {
+    position:absolute;
+  top:773;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:721;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtVC {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:965;
+    left:729;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+</style>
+
+<style>
+
+.icon-sellers {
+    position:absolute;
+  top:1010;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:191;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtsellers {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    left:219;
+    top:1206;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  
+.icon-demos {
+  position:absolute;
+  top:1010;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:361;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtdemos {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1206;
+    left:362;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  
+.icon-DLCS {
+    position:absolute;
+    top:1009;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:535;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtDLCS {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1206;
+    left:543;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  
+.icon-SALES {
+  position:absolute;
+    top:1009;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:721;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtSALES {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1206;
+    left:738;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+    .icon-exclusives {
+      position:absolute;
+    top:1245;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:191;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtexclusives {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1448;
+    left:200;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  
+  .icon-kids {
+      position:absolute;
+    top:1247;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:363;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtkids {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1448;
+    left:378;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-MP {
+      position:absolute;
+    top:1247;
+max-width:300px;
+border-radius:7px;
+margin:0;
+left:535;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtMP {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1447;
+    left:540;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-RPGS {
+      position:absolute;
+max-width:300px;
+border-radius:7px;
+margin:0;
+top:1250;
+    left:718;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtRPGS {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1447;
+    left:773;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-BUDGET {
+      position:absolute;
+max-width:300px;
+border-radius:7px;
+margin:0;
+top:1483;
+left:191;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtBUDGET {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1677;
+    left:203;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-platformer {
+      position:absolute;
+max-width:300px;
+border-radius:7px;
+margin:0;
+top:1483;
+left:365;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtplatformer {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1677;
+    left:395;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-sports {
+      position:absolute;
+max-width:300px;
+border-radius:7px;
+margin:0;
+top:1483;
+left:536;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtsports {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1677;
+    left:556;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+  .icon-rec {
+      position:absolute;
+max-width:300px;
+border-radius:7px;
+margin:0;
+top:1483;
+left:719;
+filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+max-height:200px;
+  }
+  .txtrec {
+    position:absolute;
+    font-weight:normal;
+    font-size:17px;
+    text-decoration:none;
+    top:1677;
+    left:720;
+    color:rgb(100, 100, 100);
+    max-width:1;
+    text-wrap:nowrap;
+  }
+
+</style>
+
+
+<style>
+
+
+</style>
+
+
+<!-- ESHOP MAIN PG STUFF END-->
+
+
 
 
 
@@ -331,18 +1660,20 @@ audio.play();
 </div>
 <style>
     .txt-profile {
-    left:12;
+    left:16;
     top:-375;
     position:relative;
+    font-weight:normal;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     text-wrap:nowrap;
     max-width:50px;
   }
 
   .txt-credit {
-    left:24;
+    left:27;
     top:-343;
     position:relative;
+    font-weight:normal;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     max-width:50px;
   }
@@ -351,6 +1682,7 @@ audio.play();
     left:32;
     top:-285;
     position:relative;
+    font-weight:normal;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     max-width:1px;
   }
@@ -367,8 +1699,9 @@ audio.play();
   .txtSEARCH {
     position:absolute;
     top:-23px;
-    left:-3px;
+    left:-0px;
     max-width:1px;
+    font-weight:normal;
   }
   .exitbtn {
     left:37;
@@ -434,42 +1767,52 @@ audio.play();
     top:-253;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
-    font-weight:bold;
+    font-weight:normal;
     max-width:121.8px;
+    color:rgb(44, 44, 44);
   }
   .txt-2 {
     left:409;
     top:-302;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
-    font-weight:bold;
+    font-weight:normal;
     max-width:5px;
+    color:rgb(44, 44, 44);
   }
   .txt-3 {
     left:593;
-    top:-343;
+    top:-341.1;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
     max-width:5px;
-
+    color:rgb(44, 44, 44);
+font-weight:normal;
   }
 
   .txt1a {
 max-width:5px;
+color:rgb(44, 44, 44);
+font-weight:normal;
 
   }
   .txt2a {
 max-width:.1px;
+color:rgb(44, 44, 44);
+font-weight:normal;
 
   }
   .txt3a {
     max-width:.1px;
+    color:rgb(44, 44, 44);
+    font-weight:normal;
   }
   .txt-head {
     left:8;
     top:-359;
     position:relative;
     cursor: url("cursor.png"),url("cursor.png") pointer;
+    font-weight:normal;
   }
   .profileicon {
     top:-329;
@@ -534,6 +1877,8 @@ top:-20px;
 left:1px;
 max-width:1px;
 position:relative;
+color:rgb(44, 44, 44);
+font-weight:normal;
   }
 </style>
 
@@ -553,37 +1898,34 @@ position:relative;
   </style>
 
   </a>
-    <a style="text-decoration:none;" href="fadeaway.html"  onmouseover="hover()" onclick="back()">
+  <a class="link1" style="text-decoration:none;" href="fadeaway.html"  onmouseover="hover()" onclick="back()">
     <div onclick="load()" class="exitbtn">
       <h4 class="exittxt">Close</h4>
     </a>
     </div>
     </a>
-    <img class="logo" src="eshoplogo.png">
-
     <Style>
       .exittxt {
         color:white;
-        top:-9px;
-        left:-5px;
+        top:35px;
+        left:-2px;
         text-decoration:none;
         position:relative;
+        font-weight:normal;
+      }
+      .link1 {
+        position:relative;
+        top:150px;
       }
     </Style>
 
 
 
-<Style>
-  .logo {
-position:absolute;
-top:230;
-max-width:390px;
-margin:0;
-left:320;
-  }
-
-</style>
 <link rel="icon" type="image/x-icon" href="eshop_bag.png">
+
+
+
+
 
 
 <script>
@@ -613,6 +1955,11 @@ audio.play();
   document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
 </script>
 <!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+
+
+<link rel="icon" type="image/x-icon" href="eshop_bag.png">
+<title>Wii U eShop recreation</title>
+
 
 
 <div class="custom-cursor">
@@ -648,3 +1995,110 @@ $(document).on("mousemove", function(e) {
 });
 }
     </script>
+
+
+
+
+
+<!-- UNUSED -->
+<!-- UNUSED -->
+<!-- UNUSED -->
+
+<div  style="display:none;">
+  <img id="image" class="iconztop" src="icons/toppartz-2.png" onmouseover="hover()" onclick="clicksound()"  loading="lazy">
+ 
+</div>
+</a>
+
+<a  style="display:none;" href="#?NEWRELEASES" onmouseover="hover()" onclick="clicksound()">
+<h2  style="display:none;" class="txt1icons">New Releases</h2>
+</a>
+
+<a  style="display:none;" href="#?DemosFTS" onmouseover="hover()" onclick="clicksound()">
+<h2  style="display:none;" class="txt2icons">Demos & Free-to-S...</h2>
+</a>
+
+<a  style="display:none;" href="#?SPECIALOFFERS" onmouseover="hover()" onclick="clicksound()">
+  <h2  style="display:none;" class="txt3icons">Special Offers</h2>
+  </a>
+
+  <a  style="display:none;" href="#?VIDEOS" onmouseover="hover()" onclick="clicksound()">
+    <h2  style="display:none;" class="txt4icons">Videos</h2>
+    </a>
+
+
+
+<div style="display:none;">
+  <a>
+  <img id="image" class="SPOTLIGHT" src="icons/INSPOTLIGHT-icon.PNG" onmouseover="hover()"  loading="lazy">
+</div>
+</a>
+
+<style>
+  /* Top icons (not games) START */
+  .txt1icons {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:118;
+  left:180;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.txt2icons {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:118;
+  left:342;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.txt3icons {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:118;
+  left:555;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.txt4icons {
+  position:absolute;
+  font-weight:normal;
+  font-size:17px;
+  text-decoration:none;
+  top:118;
+  left:778;
+  color:rgb(100, 100, 100);
+  max-width:1;
+  text-wrap:nowrap;
+}
+.SPOTLIGHT {
+position:absolute;
+top:159;
+max-width:747px;
+margin:0;
+left:140;
+filter: drop-shadow(1px 1px 3px rgb(189, 189, 189));
+}
+.iconztop {
+  position:absolute;
+top:89;
+max-width:747px;
+margin:0;
+left:145;
+filter: drop-shadow(4px 7px 3px rgb(189, 189, 189));
+}
+/* Top icons (not games) END */
+</style>
+
+<!-- UNUSED -->
+<!-- UNUSED -->
+<!-- UNUSED -->

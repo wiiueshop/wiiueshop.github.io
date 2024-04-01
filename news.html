@@ -84,8 +84,8 @@ audio.play();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wii U eShop recreation</title>
-  <link rel="stylesheet" href="eshop.css">
+  <title>Wii U eShop recreation - News</title>
+  <link rel="stylesheet" href="eshopnotcluttered.css">
   <link rel="icon" type="image/x-icon" href="eshop_bag.png">
   
 <script>
@@ -111,34 +111,156 @@ audio.play();
   </script></head>
 <body>
 
-<h4>Wii U eShop remake - Credits</h4>
-<hr>
-<div class="credits">
-
-<div>
-    <h4>Credit to <b><a target="_blank" href="https://www.youtube.com/NathanBoehm?sub_confirmation=1">Nathan Boehm</a></b> for the inspiration for this website.</h4>
-    <h3>Heres a link to his WSC website (Not affilated with this project):</h3>
-    <a target="_blank" href="https://wiishopchannel.net">https://wiishopchannel.net</a>
-</div>
-
-
-
-</div>
-
-    <a href="mainpghtml.html" onclick="clicksound()" onmouseover="hover()">
-<div  >
-    <button onclick="load()">Go back to eShop main page</button>
+  <!-- use   style="display:none;"  to hide a news article that isnt currently being used.-->
+  <div class="newsarea"  >
+<div class="news01">
+  <a href="#?news1" onclick="clicksound()">
+ <img src="news/news-hoold.png" class="newsholdr1">
+ <p onmouseover="hover()" class="newstxt1">News test : 1</p>
 </a>
 </div>
+
+<div class="news01" >
+  <a href="#?news2" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 2</p>
 </a>
+ </div>
+ <div class="news01" >
+  <a href="#?news3" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 3</p>
+</a>
+ </div>
+ <div class="news01">
+  <a href="#?news4" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 4</p>
+</a>
+ </div>
+
+ <div class="news01" >
+  <a href="#?news5" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 5</p>
+</a>
+ </div>
+ <div class="news01"  style="display:none;"  >
+  <a href="#?news6" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 6</p>
+</a>
+ </div>
+ <div class="news01" style="display:none;"  >
+  <a href="#?news7" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 7</p>
+</a>
+ </div>
+ <div class="news01" style="display:none;"  >
+  <a href="#?news8" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 8</p>
+</a>
+ </div>
+ <div class="news01"  style="display:none;" >
+  <a href="#?news9" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 9</p>
+</a>
+ </div>
+ <div class="news01"  style="display:none;" >
+  <a href="#?news10" onclick="clicksound()">
+  <img src="news/news-hoold.png" class="newsholdr1">
+  <p onmouseover="hover()" class="newstxt1">News test : 10</p>
+</a>
+ </div>
+
+  </div>
+
+  <!-- Overlays the default X exit button with a back button to fit the eShop btr -->
+  <a href="mainpghtml.html" onclick="back()" onmouseover="hover()">
+    <div  >
+        <img class="overlaythedefaultexitbtn" src="icons/exit-BACK_overlay.PNG">
+    </a>
+    </div>
+    </a>
+    <style>
+      .overlaythedefaultexitbtn {
+        max-width:116px;
+        position:relative;
+        top:-65;
+        left:-0;
+      }
+    </style>
+  <!-- Overlays the default X exit button with a back button to fit the eShop btr -->
+
+
+  <style>
+      body {
+    background-image:url(bg_menu_notopbar_otherstuffz.png);
+    background-repeat:no-repeat;
+    background-size:885px;
+    cursor: url("cursor.png"),url("cursor.png") pointer;
+    transition:3s;
+    overflow-y:hidden;
+  }
+
+        .newsholdr1 {
+      max-width:650px;
+      max-height:650px;
+      position:relative;
+    }
+    .newsholdr1 {
+      box-shadow: 10px 0 16px -1px #88888856;
+      transition:.3s;
+    }
+    .newsholdr1:hover {
+      box-shadow: 10px 0 16px -1px #8888889d;
+      transition:.3s;
+    }
+    .newsholdr1:hover {
+      max-width:650px;
+      max-height:650px;
+      position:relative;
+    }
+    .newstxt1 {
+      position:relative;
+      top:-64px;
+      left:45;
+      font-size:19px;
+      max-width:300px;
+      max-width:300px;
+    }
+    .newsarea {
+      overflow:scroll;
+    border-radius:5px;
+    background-color:rgba(0, 0, 0, 0.007);
+    width:auto;
+    height:465px;
+    display:block;
+    margin-left:155px;
+    }
+    .news01 a {
+      text-decoration:none;
+      color:rgb(44, 44, 44);
+    }
+    .news01 a:hover {
+      text-decoration:none;
+      color:rgb(102, 102, 102);
+    }
+  </style>
+
+</div>
 
 
 
 <!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
 <script>
-    document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+  document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
 </script>
 <!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+
 
 <style>
     .credits {
@@ -153,6 +275,9 @@ audio.play();
         transition:.3s;
     }
 </style>
+
+
+
 
 
 
@@ -189,3 +314,22 @@ audio.play();
   });
   
       </script>
+
+
+<a class="frontpg-txt-onlysidebar" href="mainpghtml.html" onclick="back()" onmouseover="hover()">eShop Home
+</a>
+
+<style>
+  .frontpg-txt-onlysidebar {
+    position:absolute;
+    top:46;
+    font-weight:400;
+    left:15;
+    text-decoration:none;
+    font-size:17px;
+    color:rgb(44, 44, 44);
+  }
+  .frontpg-txt-onlysidebar:hover {
+    color:rgb(65, 65, 65);
+  }
+</style>

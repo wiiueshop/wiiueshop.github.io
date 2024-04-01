@@ -79,7 +79,6 @@ h4 {
 </Style>
 
 <title>eShop - Please wait..</title>
-<meta http-equiv = "refresh" content = ".3; url = mainpghtml.html" />
 <link rel="icon" type="image/x-icon" href="eshop_bag.png">
 </body>
 
@@ -91,3 +90,14 @@ h4 {
     document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
 </script>
 <!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+
+
+<script>
+
+var meta = document.querySelector('meta[http-equiv="refresh"]');
+if (meta) {
+  meta.parentNode.removeChild(meta);
+}
+</script>
+
+<meta http-equiv = "refresh" content = ".1; url = mainpghtml.html" />
