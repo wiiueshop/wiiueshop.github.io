@@ -21,39 +21,10 @@
 }
 
 </style>
-<meta http-equiv = "refresh" content = ".2; url = mainpgholder(bgm-etc).html" />
 
-<div class="custom-cursor">
-  <img src="cursor.png">
-    <!-- Follow Your mouse pointer code (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code. 
-  this is just modified to work with images.)
-  -->
-    </div>
-
-    <Style>
-        .custom-cursor {
-    /*  Follow Your mouse pointer CSS (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code.
-     this is just modified to work with images.  */
-  
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999;
-    transform: translate3d(var(--x, -150px), var(--y, -150px), 0);
-  }
-  .custom-cursor img {
-max-width:90px;
-  }
-    </Style>
-
-    <script>
-      // Follow Your mouse pointer JS (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code. 
-// this is just modified to work with images.)
-
-$(document).on("mousemove", function(e) {
-    $(".custom-cursor").attr('style', '--y:' + e.clientY + 'px; --x:' + e.clientX +'px' )
-});
-
-    </script>
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+<script>
+  document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+</script>
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
 
