@@ -110,7 +110,26 @@ audio.play();
   }
   </script></head>
 <body>
-
+<style>
+  .titleofcatalog {
+    color:rgb(145, 145, 145);
+    font-weight:normal;
+    position:absolute;
+    left:195px;
+    top:13px;
+    font-size:18.3px;
+  }
+  .itemscount {
+    color:rgb(145, 145, 145);
+    font-weight:normal;
+    position:absolute;
+    left:590px;
+    top:35px;
+    font-size:20px;
+  }
+</style>
+  <h3 class="titleofcatalog">Catalog</h3>
+  <h4 class="itemscount">10</h4>
   <br>
   <br>
   <br>
@@ -120,16 +139,190 @@ audio.play();
  <!-- CATALOG WII U START -->
  <div class="appsarea">
 
-  <div>
-    <a href="#?app1" style="text-decoration:none;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+ <!-- do not edit app01 or appone cause they fix a bug with the catalog,
+   attempting to edit it can seriously break the catalog.-->
+     <div class="app01">
+ <!-- do not edit app01 or appone cause they fix a bug with the catalog,
+   attempting to edit it can seriously break the catalog.-->
+
+    <div class="appone" onclick="load()">
+
+    <a href="#?app1" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+      <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
     <p onmouseover="hover()" class="apptitle">App Name</p>
-    <p onmouseover="hover()" class="appcatagory">Wii U Download</p>
+    <p onmouseover="hover()" class="appcatagory">Wii U Download Only</p>
     <p onmouseover="hover()" class="apppublisher">Nintendo</p>
     <p onmouseover="hover()" class="appESRB">ESRB: E</p>
     <p onmouseover="hover()" class="appprice">$ 0.00</p>
     <img src="icons/catalogicons/FIVESTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+  </a>
+</div>
+</div>
+
+<div class="app02" onclick="load()">
+  <a href="#?app2" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3j1dtB6u0MpNVgvusNFbvBznf1ZGcxF2_G4XQTkGr8Q&s" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 2</p>
+  <p onmouseover="hover()" class="appcatagory">NES</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/FOURSTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app03" onclick="load()">
+  <a href="#?app3" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="https://static.wikia.nocookie.net/robloxcities/images/d/d2/RobloxLogo.png/revision/latest?cb=20230125021936" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 3</p>
+  <p onmouseover="hover()" class="appcatagory">SNES</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/FOURANDAHALFSTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app04" onclick="load()">
+  <a href="#?app4" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="https://1000logos.net/wp-content/uploads/2017/03/Nintendo-Logo-1983.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 4</p>
+  <p onmouseover="hover()" class="appcatagory">Game Boy Advance</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/THREESTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app05" onclick="load()">
+  <a href="#?app5" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 5</p>
+  <p onmouseover="hover()" class="appcatagory">Nintendo 64</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/THREEANDAHALFSTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app06" onclick="load()">
+  <a href="#?app6" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 6</p>
+  <p onmouseover="hover()" class="appcatagory">Nintendo DS</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/THREESTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app07" onclick="load()">
+  <a href="#?app7" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 7</p>
+  <p onmouseover="hover()" class="appcatagory">Wii</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/THREEANDAHALFSTAR_REVIEW.PNG" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app08" onclick="load()">
+  <a href="#?app8" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 8</p>
+  <p onmouseover="hover()" class="appcatagory">Wii U Download Only</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/TWOSTAR_REVIEW.png" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app09" onclick="load()">
+  <a href="#?app9" style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;" onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 9</p>
+  <p onmouseover="hover()" class="appcatagory">Wii U Download Only</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/TWOANDAHALFSTAR_REVIEW.png" class="STARREVIEWFORAPP">
+</a>
+</div>
+
+<div class="app10" onclick="load()">
+  <a href="#?app10"   style=" text-decoration:none; max-width:0px; max-height:0px; width:0px; height:0px;"
+  onclick="clicksound()" class="applinkk"><img src="icons/catalogicons/appicon.PNG" class="appsholdr1" alt="appicon"> 
+    <img src="icons/catalogicons/appicons/uicon.png" onmouseover="hover()" class="appicon" alt="uicon"> 
+  <p onmouseover="hover()" class="apptitle">App Name 10</p>
+  <p onmouseover="hover()" class="appcatagory">Wii U Download Only</p>
+  <p onmouseover="hover()" class="apppublisher">Nintendo</p>
+  <p onmouseover="hover()" class="appESRB">ESRB: E</p>
+  <p onmouseover="hover()" class="appprice">$ 0.00</p>
+  <img src="icons/catalogicons/ONESTAR_REVIEW.png" class="STARREVIEWFORAPP">
+</a>
 
 </div>
+
+<style>
+  .appone {
+    /* DO NOT EDIT */
+    margin-left:20px;
+    /* DO NOT EDIT */
+  }
+
+  .app02 {
+    position:absolute;
+    top:160px;
+    left:20px;
+  }
+  .app03 {
+    position:absolute;
+    top:330px;
+    left:20px;
+  }
+  .app04 {
+    position:absolute;
+    top:503px;
+    left:20px;
+  }
+  .app05 {
+    position:absolute;
+    top:680px;
+    left:20px;
+  }
+  .app06 {
+    position:absolute;
+    top:850px;
+    left:20px;
+  }  
+  .app07 {
+    position:absolute;
+    top:1020px;
+    left:20px;
+  }
+  .app08 {
+    position:absolute;
+    top:1190px;
+    left:20px;
+  }
+  .app09 {
+    position:absolute;
+    top:1360px;
+    left:20px;
+  }
+  .app10 {
+    position:absolute;
+    top:1530px;
+    left:20px;
+  }
+</style>
+
 
 </a></a></a></a></a></a></a></a></a></a>
 
@@ -148,18 +341,18 @@ audio.play();
       .overlaythedefaultexitbtn {
         max-width:116px;
         position:relative;
-        top:-75;
+        top:-60;
         left:-0;
       }
     </style>
   <!-- Overlays the default X exit button with a back button to fit the eShop btr -->
 
-
   <style>
     .applinkk{
       max-width:0px;
       max-height:0px;
-      height:5px;
+      width:0px;
+      height:0px;
     }
       body {
     background-image:url(bg_menu_catalog.png);
@@ -178,6 +371,7 @@ audio.play();
       height:145px;
       filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
       position:relative;
+      margin-bottom:0;
     }
     .appsholdr1 {
       transition:.3s;
@@ -252,26 +446,29 @@ audio.play();
     }
     .appicon {
       position:relative;
-      top:-10px;
+      top:-12px;
       left:-640;
       font-size:19px;
 max-width:79px;
-max-height:139px;
-width:79px;
-height:75px;
+max-height:120px;
+width:78px;
+height:88px;
       text-decoration:none;
       color:rgb(0, 0, 0);
     }
     .appsarea {
       overflow:scroll;
     border-radius:5px;
-    background-color:rgba(0, 0, 0, 0.007);
-    max-width:750;
-    max-height:170px;
+    background-color:rgba(132, 132, 132, 0.092)(255, 255, 255);
+    max-width:720;
+    width:720;
+    max-height:350px;
+    height:350px;
     display:block;
     margin-left:155px;
     overflow-y:scroll;
     position: sticky;
+    overflow-x:hidden;
     }
   </style>
 
