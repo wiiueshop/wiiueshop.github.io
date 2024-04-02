@@ -1,591 +1,103 @@
 
-<!-- Change the audio depending on month here: Janurary (bgm_jan.mp3), Summer months (bgm_summer.mp3) , Christmas theme (bgm_christmas.mp3)-->
-<iframe src="bgm/bgm_jan.mp3" type="audio/mp3" allow="autoplay" allow="loop"  id="audio" style="display:none"></iframe>
-<!-- Change the audio depending on month here: Janurary (bgm_jan.mp3), Summer months (bgm_summer.mp3) , Christmas theme (bgm_christmas.mp3)-->
+
+<center>
+<body onload="load()">
 
 
-<!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
-    <!-- Loading image stuff start (do the load() function on something so it shows while loading another page.)-->
-    <div class="loader">
-      <img class="ldrrIMAFE" src="loading_box_preloadr.PNG" >
-    </div>
-<Script>
-  window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
+    <img id="imgforshow" src="/load-ui-sfx/loadertry2.gif" class="loaderthatshows">
 
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
-
-</Script>
-    <div class="containermg">
-      <div id="imgloadr" class="card-header">
-          <img id="imgforshow" src="/load-ui-sfx/loadertry2.gif" class="loaderthatshows">
-       </div>
-      </div>
-       
-      <!-- LOADER IMG for the load() function on something so it shows while loading another page, 
-          CHANGE THE IMAGE TO YOUR LIKING) !-->
-      
-          <!-- Loading image script and css start (do the load() function on something so it shows while loading another page.)-->
-      <script>
-          function load() {
-              $('#imgforshow').fadeTo(200, 0.9); // Fade to 50% opacity over 1 second
-              var audio = new Audio('sfx/Wii U - Loading.mp3');
-audio.play();
-          }
-
-      </script>
-      <!-- Loading image css start -->
-      
-      <style>
-.ldrrIMAFE {
-  max-width:220px; max-height:90px;
-  left:385px;
-  top:205px;
-  position:absolute;
+        <script>
+            function load() {
+                $('#imgforshow').fadeTo(200, 0.9); // Fade to 50% opacity over 1 second
+                var audio = new Audio('sfx/Wii U - Loading.mp3');
+  audio.play();
+            }
+  
+        </script>
+        <!-- Loading image css start -->
+        
+        <style>
+  .ldrrIMAFE {
+    max-width:220px; max-height:90px;
+    left:385px;
+    top:205px;
+    position:absolute;
+  }
+  
+  
+            /* Loader img properties */
+        .loaderthatshows {
+           float:center;
+           margin:0;
+           top:0;
+           position:sticky;
+           border-radius:20px;
+           opacity:0%;
+           bottom:9;
+           /* Change depending on image */
+           max-width:60px;
+        
+           /* Change depending on image */
+        }
+        /* Loader img properties */
+        
+        
+        /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
+        .containermg {
+            position: center;
+            float:center;
+            display:center;
+ margin:0;
+            opacity:100%;
+        }
+    
+        /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
+        
+        </style>
+        <!-- Loading image css end -->
+        
+        
+            <!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
+        
+            <!-- Loading image stuff end (do the load() function on something so it shows while loading another page.)-->
+        
+            <BR><BR><BR>
+            
+<h4>Please wait a moment..</h4>
+<Style>
+* {
+    font-family:"nintendo_NTLG-DB_002",sans-serif;
+    position:center;
+font-size:19px;
 }
 
 
-          /* Loader img properties */
-      .loaderthatshows {
-         float:left;
-         margin:0;
-         top:0;
-         position:sticky;
-         border-radius:20px;
-         opacity:0%;
-         /* Change depending on image */
-         max-width:60px;
-      
-         /* Change depending on image */
-      }
-      /* Loader img properties */
-      
-      
-      /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
-      .containermg {
-          position: absolute;
-          left:2.1%;
-          top:1.5%;
-          opacity:70%;
-      }
-  
-      /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
-      
-      </style>
-      <!-- Loading image css end -->
-      
-      
-          <!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
-      
-          <!-- Loading image stuff end (do the load() function on something so it shows while loading another page.)-->
-      
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wii U eShop recreation</title>
-  <link rel="stylesheet" href="eshop.css">
-  <link rel="icon" type="image/x-icon" href="eshop_bag.png">
-</head>
-<body>
-
-    <div class="ybtn" onmouseover="hover()" onclick="clicksound()" style="visibility:hidden;">
-      <a   >
-      <img id="image"    onclick="load()" src="/image/seperated imgs menu/btn_Y.png" loading="lazy">
-    </a>
-    </div>
-  </a>
-</a>
-</a>
-</a>
-</a>
-    <div class="plusbtn" onmouseover="hover()" onclick="clicksound()"  style="visibility:hidden;">
-      <a   >
-      <img id="image"    onclick="load()" src="/image/seperated imgs menu/btn_plus.png"  loading="lazy">
-    </a>
-    </div>
-  </a>
-</a>
-</a>
-</a>
-</a>
-    <div class="minusbtn" onmouseover="hover()" onclick="clicksound()"  style="visibility:hidden;">
-      <a   >
-      <img id="image"    onclick="load()" src="/image/seperated imgs menu/btn_minus.png"  loading="lazy">
-    </a>
-    </div>
-  </a>
-</a>
-</a>
-</a>
-</a>
-    <div class="pts">
-      <a   onmouseover="hover()" onclick="clicksound()">
-      <img id="image"   src="crediticon_plus.PNG"  loading="lazy">
-    </a>
-    </div>
-  </a>
-</a>
-</a>
-</a>
-</a>
-
-<div  class="dnlcodesicon">
-  <a href="#"  onmouseover="hover()" onclick="clicksound()">
-  <img id="image"    onclick="load()" src="/image/seperated imgs menu/dnl_codes_icon.png"  loading="lazy">
-</a>
-</div>
-</a>
-</a>
-</a>
-</a>
-</a>
-<div class="chartsicon" >
-  <a href="Charts.html"  onmouseover="hover()" onclick="clicksound()">
-  <img id="image"    onclick="load()"  src="/image/seperated imgs menu/Charts_icon.png"  loading="lazy">
-</a>
-</div>
-</a>
-</a>
-</a>
-</a>
-</a>
-    <!-- UNUSED -->
-<div class="newsnew"  style="visibility:hidden;">
-  <!-- UNUSED -->
-  <img  id="image"    src="/image/seperated imgs menu/news_icon_NEW_bkup.png"  loading="lazy">
-    <!-- UNUSED -->
-</a>
-</div>
-</a>
-</a>
-</a>
-</a>
-</a>
-    <!-- UNUSED END -->
-
-        <!-- Change the /image/seperated imgs menu/news_icon.png to
-           /image/seperated imgs menu/news_icon_NEW_bkup.png IF THERE IS NEW NEWS -->
-<div  class="newsicon">
-  <a href="News.html"  onmouseover="hover()" onclick="clicksound()">
-  <img id="image"    onclick="load()"  src="/image/seperated imgs menu/news_icon.png"  loading="lazy">
-</a>
-</div>
-        <!-- Change the /image/seperated imgs menu/news_icon.png to
-           /image/seperated imgs menu/news_icon_NEW_bkup.png IF THERE IS NEW NEWS -->
-
-</a>
-<a><a><a><a><a></a>
-</a>
-</a>
-</a>
-</a>
-
-<div  class="searchbtn" >
-  <img id="image"   class="srch" onmouseover="hover()" src="search_icon.PNG"  loading="lazy">
-</a>
-</a></a>
-</a>
-</a>
-</div>
-
-
-
-<div class="txt-1" onclick="clicksound()">
-    <a onclick="load()"  href="DownloadCodes.html" style="text-decoration:none; color:black;" onmouseover="hover()"  >Enter Download <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Code</h4> </a>  
-  </a>
-</a>
-</a>
-</a>
-</a>
-</div>
-</a>
-
-<div class="txt-2" onclick="clicksound()" >
-    <a href="Charts.html"   style="text-decoration:none; color:black;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt2a" onclick="load()">Charts</h4>  </a>
-  </a>
-</a>
-</a>
-
-</a>
-</a>
-</div>
-</a>
-
-<div class="txt-3" onclick="clicksound()">
-    <a href="news.html"  style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" onclick="load()">News</h4> </a> 
-  </a>
-</a>
-</a>
-</a>
-</a>
-</div>
-</a>
-
-<div class="txt-head" onmouseover="hover()">
-  <h4 style="color:rgb(255, 158, 48);">eShop Home</h4>
-</div>
-
-</a>
-<div  class="profileicon">
-  <a   onmouseover="hover()" onclick="clicksound()">
-  <img id="image"      src="mymenuiconuisr.PNG"  loading="lazy">
-</a>
-</div>
-</a>
-<a><a><a><a><a></a>
-</a>
-</a>
-</a>
-</a>
-
-</a>
-<div>
-  <a   onmouseover="hover()" onclick="clicksound()">
-
-</a>
-</div>
-</a>
-<a><a><a><a><a></a>
-</a>
-</a>
-</a>
-</a>
-<div  class="searchiconsidebar">
-  <a   onmouseover="hover()" onclick="clicksound()">
-  <img id="image"    class="iconsearch"  src="search_iconwminus.PNG"  loading="lazy">
-</a>
-</div>
-</a>
-<a><a><a><a><a></a>
-</a>
-</a>
-</a>
-</a>
-
-</a>
-
-<div class="txt-profile" onclick="clicksound()">
-    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="mymenutxt" >&nbsp;&nbsp;My Menu</h4> </a> 
-  </a>
-</a>
-</a>
-</a>
-</a>
-</div>
-</a>
-
-</a>
-
-<div class="txt-credit" onclick="clicksound()">
-    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txt3a" >Balance: <br> &nbsp;&nbsp;&nbsp;&nbsp;null</h4> </a> 
-  </a>
-</a>
-</a>
-</a>
-</a>
-</div>
-</a>
-
-</a>
-
-<div class="txt-srchbtm" onclick="clicksound()">
-    <a   style="text-decoration:none; color:black; max-width:0px;" onmouseover="hover()" style="text-decoration:none; color:black;"> <h4 class="txtSEARCH" >Search</h4> </a> 
-  </a>
-</a>
-</a>
-</a>
-</a>
-</div>
-</a>
-<a href="fadeaway.html"  onmouseover="hover()" onclick="back()">
-
-<div class="exitbtn">
-  <img id="image"   class="exit" src="X_icon2.PNG"  loading="lazy">
-</a>
-</div>
-</a>
-
-
-
-
-</body>
-</html>
-
-</div>
-<style>
-    .txt-profile {
-    left:12;
-    top:-375;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
+h4 {
     text-wrap:nowrap;
-  }
+    margin-top:-10px;
+}
+</Style>
 
-  .txt-credit {
-    left:24;
-    top:-343;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-
-  .txt-srchbtm {
-    left:32;
-    top:-285;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-
-  body {
-    background-image:url(bg_menu.png);
-    background-repeat:no-repeat;
-    background-size:885px;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .txtSEARCH {
-    position:absolute;
-    top:-23px;
-    left:-3px;
-  }
-  .exitbtn {
-    left:37;
-    top:-239;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-  .exit {
-    max-width:39px;
-  }
-  .dnlcodesicon img {
-    max-width:27px;
-  }
-  .chartsicon img {
-   max-width:27px;
-  }
-  .newsicon img {
-   max-width:27px;
-  }
-  .newsnew img {
-   max-width:25px;
-  }
-  .dnlcodesicon {
-    left:140;
-   top:-103;
-   position:relative;
-   cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-  .chartsicon {
-  left:350;
-   top: -132px;;
-   position:relative;
-   cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-  .newsicon {
-    left:530;
-   top: -190px;
-   position:relative;
-   cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-
-  .searchbtn {
-    top:-223; left: 701px;;
-   position:relative;
-   cursor: url("cursor.png"),url("cursor.png") pointer;
-   width:160px;
-   padding-bottom:1px;
-   padding-top:1px;
-  }
-
-  .searchbtn img {
-    max-width:65px;
-  }
-  .srch {
-    margin-left:9px;
-    margin-top:1px;
-    max-width:65px;
-
-  }
-  .txt-1 {
-    left:188;
-    top:-253;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-    font-weight:bold;
-    max-width:121.8px;
-  }
-  .txt-2 {
-    left:409;
-    top:-302;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-    font-weight:bold;
-    max-width:5px;
-  }
-  .txt-3 {
-    left:593;
-    top:-343;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-    max-width:5px;
-
-  }
-
-  .txt1a {
-max-width:5px;
-
-  }
-  .txt2a {
-max-width:.1px;
-
-  }
-  .txt3a {
-    max-width:.1px;
-  }
-  .txt-head {
-    left:8;
-    top:-359;
-    position:relative;
-    cursor: url("cursor.png"),url("cursor.png") pointer;
-  }
-  .profileicon {
-    top:-329;
-    left:33;
-    position:relative;
-  }
-  .profileicon img {
-max-width:65px;
-  }
-  .pts {
-    top:137;
-    left:37;
-    position:relative;
-  }
-  .ybtn {
-    top:127;
-    left:75;
-    position:relative;
-  }
-  .plusbtn {
-    top:195;
-    left:75;
-    position:relative;
-  }
-  .minusbtn {
-    top:270;
-    left:75;
-    position:relative;
-  }
-  .pts img {
-    max-width:65px;
-  }
-  .ybtn img {
-    width:26px;
-  }
-  .xbtn img {
-    width:26px;
-  }
-  .plusbtn img {
-    width:26px;
-  }
-  .minusbtn img {
-    width:26px;
-  }
-  .searchiconsidebar {
-    top:-159;
-    left:37;
-    position:relative;
-  }
-  .searchiconsidebar img {
-    max-width:69px;
-  }
-  .iconsearch {
-    position:relative;
-    top:-15px;
-    left:-3px;
-  }
-  .mymenutxt {
-top:-20px;
-left:1px;
-position:relative;
-  }
-</style>
-
-
-
-
-<style>
-  /* THIS PREVENTS THE IMAGE FROM BUGGING OUT WHILE INTERACTING 1 */
-  img {
-    user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  }
-  </style>
-
-  </a>
-    <a style="text-decoration:none;" href="fadeaway.html"  onmouseover="hover()" onclick="back()">
-    <div class="exitbtn">
-      <h4 class="exittxt">Close</h4>
-    </a>
-    </div>
-    </a>
-    <img class="logo" src="eshoplogo.png">
-
-    <Style>
-      .exittxt {
-        color:white;
-        top:-9px;
-        left:-5px;
-        text-decoration:none;
-        position:relative;
-      }
-    </Style>
-
-
-
-<Style>
-  .logo {
-position:absolute;
-top:230;
-max-width:390px;
-margin:0;
-left:320;
-  }
-
-</style>
+<title>eShop - Please wait..</title>
 <link rel="icon" type="image/x-icon" href="eshop_bag.png">
+</body>
+
+</center>
+
+
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+<script>
+    document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+</script>
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
 
 
 <script>
-  function hover() {
-    var audio = new Audio('sfx/Wii U - Hover.mp3');
-audio.play();
-  }
-  </script>
 
+var meta = document.querySelector('meta[http-equiv="refresh"]');
+if (meta) {
+  meta.parentNode.removeChild(meta);
+}
+</script>
 
-<script>
-  function back() {
-    var audio = new Audio('sfx/Wii U - Back.wav');
-audio.play();
-  }
-  </script>
-
-<script>
-  function clicksound() {
-    var audio = new Audio('sfx/Wii U - Long Click.mp3');
-audio.play();
-  }
-  </script>
+<meta http-equiv = "refresh" content = ".3; url = mainpghtml.html" />
