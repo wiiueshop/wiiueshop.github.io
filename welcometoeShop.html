@@ -1,0 +1,274 @@
+<!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
+    <!-- Loading image stuff start (do the load() function on something so it shows while loading another page.)-->
+
+    <div class="containermg">
+      <div id="imgloadr" class="card-header">
+          <img id="imgforshow" src="/load-ui-sfx/loadertry2.gif" class="loaderthatshows">
+       </div>
+      </div>
+       
+      <!-- LOADER IMG for the load() function on something so it shows while loading another page, 
+          CHANGE THE IMAGE TO YOUR LIKING) !-->
+      
+          <!-- Loading image script and css start (do the load() function on something so it shows while loading another page.)-->
+      <script>
+          function load() {
+              $('#imgforshow').fadeTo(200, 0.9); // Fade to 50% opacity over 1 second
+              var audio = new Audio('sfx/Wii U - Loading.mp3');
+audio.play();
+          }
+
+      </script>
+      <!-- Loading image css start -->
+      
+      <style>
+.ldrrIMAFE {
+  max-width:220px; max-height:90px;
+  left:385px;
+  top:205px;
+  position:absolute;
+}
+
+
+          /* Loader img properties */
+      .loaderthatshows {
+         float:left;
+         margin:0;
+         top:0;
+         position:sticky;
+         border-radius:20px;
+         opacity:0%;
+         /* Change depending on image */
+         max-width:60px;
+      
+         /* Change depending on image */
+      }
+      /* Loader img properties */
+      
+      
+      /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
+      .containermg {
+          position: absolute;
+          left:2.1%;
+          top:1.5%;
+          opacity:70%;
+      }
+  
+      /* Loader img holder (DONT CHANGE UNLESS U KNOW WHAT YOUR DOING) */
+      
+      </style>
+      <!-- Loading image css end -->
+      
+      
+          <!--  PUT THIS ELEMENT ON TOP OF YOUR HTML CODE SO IT DOESN'T GET IN THE WAY OF ANYTHING.)-->
+      
+          <!-- Loading image stuff end (do the load() function on something so it shows while loading another page.)-->
+      
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wii U eShop recreation - Catalog</title>
+  <link rel="stylesheet" href="eshopnotcluttered.css">
+  <link rel="icon" type="image/x-icon" href="eshop_bag.png">
+  
+<script>
+  function hover() {
+    var audio = new Audio('sfx/Wii U - Hover.mp3');
+audio.play();
+  }
+  </script>
+
+
+<script>
+  function back() {
+    var audio = new Audio('sfx/Wii U - Back.wav');
+audio.play();
+  }
+  </script>
+
+<script>
+  function clicksound() {
+    var audio = new Audio('sfx/Wii U - Long Click.mp3');
+audio.play();
+  }
+  </script></head>
+<body>
+
+
+
+      <h3 class="welcometxt">Welcome to Nintendo eShop!</h3>
+
+
+      <h4 class="welcometxt2">Here you can download software,</h4>
+      <h4 class="welcometxt3">view videos about your favorite titles, and more!</h4>
+
+      <h4 class="welcometxt4">Click the button below to start shopping!</h4>
+
+
+     <a onclick="load()" href="mainpgholder(bgm-etc).html"><button onmouseover="hover()" onclick="clicksound()" class="OKBTN">OK</button></a>
+
+
+
+     <iframe src="bgm/bgm_fan.mp3" type="audio/mp3" allow="autoplay"  id="audio" style="display:none"></iframe>
+
+      <style>
+        .welcometxt {
+color:rgb(238, 127, 0);
+position:relative;
+top:85px;
+left:310px;
+        }
+        .welcometxt2 {
+color:rgb(17, 17, 17);
+position:relative;
+top:150px;
+left:310px;
+        }
+        .welcometxt3 {
+color:rgb(17, 17, 17);
+position:relative;
+top:150px;
+left:260px;
+        }
+        .welcometxt4 {
+color:rgb(17, 17, 17);
+position:relative;
+top:150px;
+left:284;
+        }
+        .OKBTN {
+          position:relative;
+          top:250px;
+          left:200px;
+          width:500px;
+          height:60px;
+          font-size:20px;
+          font-weight:normal;
+        }
+      </style>
+</a></a></a></a></a></a></a></a></a></a>
+
+  </div><!-- CATALOG WII U END -->
+</div><!-- CATALOG WII U END -->
+
+
+  <style>
+    .applinkk{
+      max-width:0px;
+      max-height:0px;
+      width:0px;
+      height:0px;
+      display:block;
+    }
+      body {
+        background-image:url(bg_welcome_eshop.png);
+    background-repeat:no-repeat;
+    background-size:885px;
+    cursor: url("cursor.png"),url("cursor.png") pointer;
+    transition:3s;
+    overflow-y:hidden;
+    text-wrap:nowrap;
+    background-color:#DBD9DB;
+    overflow:hidden;
+  }
+
+        .appsholdr1 {
+      max-width:650px;
+      width:650px;
+      max-height:650px;
+      height:145px;
+      filter: drop-shadow(3px 3px 3px rgb(131, 131, 131));
+      position:relative;
+      margin-bottom:0;
+    }
+    .appsholdr1 {
+      transition:.3s;
+      top:15px;
+    }
+    .appsholdr1:hover {
+      transition:.3s;
+    }
+
+    .appsarea {
+      overflow:scroll;
+    border-radius:5px;
+    background-color:rgba(132, 132, 132, 0.092)(255, 255, 255);
+    max-width:720;
+    width:720;
+    max-height:350px;
+    height:350px;
+    display:block;
+    margin-left:155px;
+    overflow-y:scroll;
+    position: sticky;
+    overflow-x:hidden;
+    }
+  </style>
+
+</div>
+
+
+
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+<script>
+  document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+</script>
+<!-- Original Wii U eShop was on a gamepad, no right click menu really existed, so this removes that said menu.-->
+
+
+<style>
+    .credits {
+        border: solid 3px rgb(255, 174, 0);
+    }
+    a {
+        color:rgb(255, 123, 0);
+        transition:.3s;
+    }
+    a:hover {
+        color:rgb(255, 115, 0);
+        transition:.3s;
+    }
+</style>
+
+
+
+
+
+
+<div class="custom-cursor">
+    <img src="cursor.png">
+      <!-- Follow Your mouse pointer code (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code. 
+    this is just modified to work with images.)
+    -->
+      </div>
+  
+      <Style>
+          .custom-cursor {
+      /*  Follow Your mouse pointer CSS (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code.
+       this is just modified to work with images.  */
+    
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 99999;
+      transform: translate3d(var(--x, -150px), var(--y, -150px), 0);
+    }
+    .custom-cursor img {
+  max-width:90px;
+    }
+      </Style>
+  
+      <script>
+        // Follow Your mouse pointer JS (Credit to https://codepen.io/mfritsch on codepen.io for the original JS and css code. 
+  // this is just modified to work with images.)
+  
+  $(document).on("mousemove", function(e) {
+      $(".custom-cursor").attr('style', '--y:' + e.clientY + 'px; --x:' + e.clientX +'px' )
+  });
+  
+      </script>
+

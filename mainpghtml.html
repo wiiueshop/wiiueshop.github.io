@@ -1,8 +1,9 @@
 <style>
   body {
-        max-width: 100%;
+    max-width: 100%;
   }
-  </style>
+</style>
+
 <head>
   <link rel="icon" type="image/x-icon" href="eshop_bag.png">
   <title>Wii U eShop recreation</title>
@@ -325,13 +326,6 @@ audio.play();
 </a>
 </div>
 </a>
-<a href="fadeaway.html" >
-
-<div class="exitbtn">
-  <img id="image"  onmouseover="hover()"  class="exit" src="icons/mainpageicons/X_icon2.PNG"  loading="lazy">
-</a>
-</div>
-</a>
 
 
 
@@ -369,16 +363,16 @@ audio.play();
      <!-- _____________________________________________________________________  -->
      <!-- _____________________________________________________________________  -->
     <div onclick="load()">
-      <a  onclick="load()"  href="catalog.html?MARIO"><img id="image" class="icon-MARIO" src="icons/gameicons/MARIOGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()" loading="lazy" alt="MARIOGAMES_ICON"></a>
+      <a href="catalog.html?MARIO"><img id="image" class="icon-MARIO" src="icons/gameicons/MARIOGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()" loading="lazy" alt="MARIOGAMES_ICON"></a>
     </div><a href="catalog.html?MARIO" onmouseover="hover()" onclick="clicksound()">
-    <h2   onclick="load()" class="txtMARIO">Mario™ Games</h2></a> <!-- _____________________________________________________________________  -->
+    <h2 class="txtMARIO">Mario™ Games</h2></a> <!-- _____________________________________________________________________  -->
      <!-- _____________________________________________________________________  -->
      <!-- _____________________________________________________________________  -->
      <!-- _____________________________________________________________________  -->
-     <a  onclick="load()" href="catalog.html?POKEMON" onmouseover="hover()" onclick="clicksound()">
+     <a  onclick="load()" href="#?POKEMON" onmouseover="hover()" onclick="clicksound()">
     <h2 class="txtPOKEMON">Pokémon™ Games</h2></a>
     <div onclick="load()">
-      <a  onclick="load()" href="catalog.html?POKEMON"><img id="image" class="icon-POKEMON" src="icons/gameicons/POKEMONGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()" loading="lazy" alt="POKEMONGAMES_ICON"></a>
+      <a  onclick="load()" href="#?POKEMON"><img id="image" class="icon-POKEMON" src="icons/gameicons/POKEMONGAMES_ICON.PNG" onmouseover="hover()" onclick="clicksound()" loading="lazy" alt="POKEMONGAMES_ICON"></a>
     </div><!-- _____________________________________________________________________  -->
     <!-- _____________________________________________________________________  -->
     <!-- _____________________________________________________________________  -->
@@ -985,6 +979,7 @@ max-height:200px;
     width:920px;
 margin-left:-50px;
     height:1100px;
+    top:90px;
     position: sticky;
     overflow:scroll;
     overflow-x:hidden;
@@ -1806,11 +1801,7 @@ font-weight:normal;
   </style>
 
   </a>
-  <a onclick="load()" class="link1" style="text-decoration:none;" href="fadeaway.html"  onmouseover="hover()" onclick="back()">
-    <div onclick="load()" class="exitbtn">
-      <h4 class="exittxt">Close</h4>
-    </a>
-    </div>
+
     </a>
     <Style>
       .exittxt {
@@ -1847,6 +1838,13 @@ audio.play();
 <script>
   function back() {
     var audio = new Audio('sfx/Wii U - Back.wav');
+audio.play();
+  }
+  </script>
+  
+<script>
+  function back2() {
+    var audio = new Audio('sfx/back_exit.wav');
 audio.play();
   }
   </script>
@@ -2014,3 +2012,19 @@ filter: drop-shadow(4px 7px 3px rgb(189, 189, 189));
 
 
 
+  <!-- Overlays the default X exit button with a back button to fit the eShop btr -->
+  <a href="fadeaway.html" onclick="back2()" onmouseover="hover()">
+    <div  >
+      '  <a href="fadeaway.html" onclick="back2()" onmouseover="hover()">
+        <img class="exitbtnfix" src="closebtn11.PNG">
+    </a>
+    </div>
+    </a>
+    <style>
+      .exitbtnfix {
+        max-width:116px;
+        position:relative;
+       top:-60px;
+       left:-6px;
+      }
+    </style>
