@@ -112,61 +112,36 @@ audio.play();
 <body>
 
   <!-- use   style="display:none;"  to hide a news article that isnt currently being used.-->
+
   <div class="newsarea"  >
-<div class="news01" onclick="load()">
-  <a href="news1.html" onclick="clicksound()">
-
-    <img src="news/news_NEW.png" class="news-NEW">
-
- <img src="news/news-hoold.png" class="newsholdr1">
-<p onmouseover="hover()" class="newstxt1">(OLD) Wii U & Nintendo 3DS eShop discontinuation</p>
-</a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news2" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()" class="newstxt1">News test : 2</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news3" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()" class="newstxt1">News test : 3</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news4" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()"  class="newstxt1">News test : 4</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news5" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()"  class="newstxt1">News test : 5</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news6" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()"  class="newstxt1">News test : 6</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news7" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()"  class="newstxt1">News test : 7</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news8" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()"  class="newstxt1">News test : 8</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news9" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()"  class="newstxt1">News test : 9</p></a>
-</div>
-<div  class="news01" onclick="load()">
-  <a href="#?news10" onclick="clicksound()" class="txthref"><img src="news/news-hoold.png" class="newsholdr1" alt="news-hoold">
-  <p onmouseover="hover()" class="newstxt1">News test : 10</p></a>
-</div>
+    <b><b><b><b><b> <h4 class="newstitle">Wii U & Nintendo 3DS eShop discontinuation</h4></b>
+    <hr class="newshr">
+<h4 class="newstextmain">Hello,<BR><BR> As of late March 2023, it will no longer be possible to make purchases<br> in Nintendo eShop for the Wii u and Nintendo 3DS family of systems. It <br> will also no longer be possible to download free content, including game <br> demos. <br><br> As of 29th August 2022, it will no longer be possible to use a Nintendo <br> eShop Card to add funds to an account in Nintendo eShop on Wii U or <br> the Nintendo 3DS family of systems. However, it will still be possible to<br> redeem downlaod codes until late match 2023.<br><br> The Changes to Nintendo eShop on Nintendo 3DS family of systems will <br> simultaneously take effect in software where it is possible to make<br> purchases. such as StreetPass Mii Plaza, Theme Shop and Nintendo <br>Badge Arcade. <br><br> Even after late March 2023 and for the foreseeable future, it will still be <br> possible to redownload games and DLC, receive software updates and <br> enjoy online play. <br><br> For more information, please visit support.nintendo.com <br><br> Nintendo eShop team </h4>
+ </div>
 
   </div>
 
   <style>
-    .news-NEW {
-      max-width:85px;
+    .newstitle {
+position:absolute;
+font-weight:500;
+left:9px;
+top:-5px;
+    }
+    .newstextmain {
+      position:absolute;
+      top:25;
+      left:30px;
+      font-weight:normal;
+      font-size:14px;
+    }
+    .newshr {
+      max-width:598px;
+    margin-top:38px;
+    margin-left:10px;
     }
       body {
-    background-image:url(bg_menu_news.png);
+    background-image:url(bg_menu_news_article.png);
     background-repeat:no-repeat;
     background-size:885px;
     cursor: url("cursor.png"),url("cursor.png") pointer;
@@ -194,18 +169,27 @@ audio.play();
     }
     .newstxt1 {
       position:relative;
-      top:-63px;
+      top:-64px;
       left:45;
       font-size:19px;
       max-width:300px;
       max-width:300px;
-      text-wrap:nowrap;
     }
+
+    .news01 a {
+      text-decoration:none;
+      color:rgb(44, 44, 44);
+    }
+    .news01 a:hover {
+      text-decoration:none;
+      color:rgb(102, 102, 102);
+    }
+
     .newsarea {
       overflow:scroll;
     border-radius:5px;
     background-color:rgba(0, 0, 0, 0.007);
-    width:700px;
+    width:720px;
     height:465px;
     display:block;
     margin-left:155px;
@@ -215,18 +199,10 @@ audio.play();
     .news01 a {
       text-decoration:none;
       color:rgb(44, 44, 44);
-      margin:0;
-      bottom:0;
     }
     .news01 a:hover {
       text-decoration:none;
       color:rgb(102, 102, 102);
-    }
-    .txthref {
-      max-width:0;
-      max-height:0;
-      height:0;
-      width:0;
     }
   </style>
 
@@ -315,7 +291,7 @@ audio.play();
 
 
   <!-- Overlays the default X exit button with a back button to fit the eShop btr -->
-  <a href="mainpghtml.html" onclick="back()" onmouseover="hover()">
+  <a href="news.html" onclick="back()" onmouseover="hover()">
     <div  >
         <img class="overlaythedefaultexitbtn" src="icons/exit-BACK_overlay.PNG">
     </a>
